@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:clickable="true">
+        </android.support.v7.widget.Toolbar>
+
+
+        <ImageView
+            android:layout_below="@+id/details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imageView"
+            android:tint="#80000000"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:padding="4dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/txt0"/>
+        <View
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt0"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/line1"/>
+        <TextView
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/txt1"/>
+        <View
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/line2"/>
+        <TextView
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/txt2"/>
+        <View
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/line3"/>
+        <TextView
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/txt3"/>
+        <View
+            android:padding="4dp"
+            android:layout_below="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/line4"/>
+        <TextView
+            android:padding="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/txt4"/>
+        <TextView
+            android:padding="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_above="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:id="@+id/txt5"/>
+
+        <View
+            android:padding="4dp"
+            android:layout_below="@+id/mail"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#c0c0c0"
+            android:id="@+id/line5"/>
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/call"
+            android:src="@drawable/call_button"
+            android:scaleType="fitXY"
+            android:backgroundTint="#3B3A3A"
+            android:layout_below="@+id/line4"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/mail"
+            android:scaleType="fitXY"
+            android:backgroundTint="#3B3A3A"
+            android:src="@drawable/mail_button"
+            android:layout_below="@+id/call"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/map"
+            android:scaleType="fitXY"
+            android:backgroundTint="#3B3A3A"
+            android:src="@drawable/map_button"
+            android:layout_below="@+id/line3"
+            android:layout_alignStart="@+id/call" />
+
+        <Button
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/line5"
+            android:text="ADD TO CALENDAR"
+            android:textSize="32sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#3B3A3A"
+            android:id="@+id/calendar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/calendar"
+            android:text="REGISTER"
+            android:textSize="50sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#3B3A3A"
+            android:id="@+id/reg"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
